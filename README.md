@@ -5,7 +5,11 @@ To run this project follow these steps:
 First ensure that the local postgres database is up and running by running: 
 `docker-compose up`
 
+
+
 Then open up a new terminal and run: 
+
+`npm install`
 `npm run develop`
 
 
