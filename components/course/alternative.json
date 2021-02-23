@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_course_alternatives",
+  "info": {
+    "name": "Alternative",
+    "icon": "check",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "correct": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    }
+  }
+}

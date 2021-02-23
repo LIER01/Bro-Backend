@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_article_sources",
+  "info": {
+    "name": "resource",
+    "icon": "link",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "source_name": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

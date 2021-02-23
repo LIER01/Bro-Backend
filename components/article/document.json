@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_article_documents",
+  "info": {
+    "name": "document",
+    "icon": "file-pdf"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "document": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}
