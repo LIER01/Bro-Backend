@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "articles",
+  "collectionName": "courses",
   "info": {
-    "name": "Article",
+    "name": "Course",
     "description": ""
   },
   "options": {
@@ -11,19 +11,24 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "cover_photo": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
-      "required": true
-    },
-    "localized_articles": {
+    "questions": {
       "type": "component",
       "repeatable": true,
-      "component": "article.localized-article"
+      "component": "course.question"
+    },
+    "slides": {
+      "type": "component",
+      "repeatable": true,
+      "component": "course.slide"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "language": {
+      "model": "language"
     },
     "publisher": {
       "model": "publisher"
