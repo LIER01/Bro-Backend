@@ -14,18 +14,24 @@
     "questions": {
       "type": "component",
       "repeatable": true,
-      "component": "course.question"
+      "component": "course.question",
+      "required": true,
+      "min": 1
     },
     "slides": {
       "type": "component",
       "repeatable": true,
-      "component": "course.slide"
+      "component": "course.slide",
+      "required": true,
+      "min": 1
     },
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "description": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "language": {
       "model": "language"
