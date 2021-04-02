@@ -2,44 +2,50 @@
   "kind": "collectionType",
   "collectionName": "courses",
   "info": {
-    "name": "Course",
-    "description": ""
+  "name": "Course",
+  "description": ""
   },
   "options": {
-    "increments": true,
-    "timestamps": true,
-    "draftAndPublish": true
+  "increments": true,
+  "timestamps": true,
+  "draftAndPublish": true
   },
   "attributes": {
-    "questions": {
-      "type": "component",
-      "repeatable": true,
-      "component": "course.question"
-    },
-    "slides": {
-      "type": "component",
-      "repeatable": true,
-      "component": "course.slide"
-    },
-    "title": {
-      "type": "string"
-    },
-    "description": {
-      "type": "string"
-    },
-    "language": {
-      "model": "language"
-    },
-    "publisher": {
-      "model": "publisher"
-    },
-    "category": {
-      "model": "category"
-    },
-    "is_recommended": {
-      "type": "boolean",
-      "default": false,
-      "required": true
-    }
+  "questions": {
+  "type": "component",
+  "repeatable": true,
+  "component": "course.question",
+  "required": true,
+  "min": 1
+  },
+  "slides": {
+  "type": "component",
+  "repeatable": true,
+  "component": "course.slide",
+  "required": true,
+  "min": 1
+  },
+  "title": {
+  "type": "string",
+  "required": true
+  },
+  "description": {
+  "type": "string",
+  "required": true
+  },
+  "language": {
+  "model": "language"
+  },
+  "publisher": {
+  "model": "publisher"
+  },
+  "category": {
+  "model": "category"
+  },
+  "is_recommended": {
+  "type": "boolean",
+  "default": false,
+  "required": true
   }
-}
+  }
+  }
