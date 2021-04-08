@@ -24,6 +24,10 @@
       ],
       "plugin": "upload",
       "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
     }
   }
 }
