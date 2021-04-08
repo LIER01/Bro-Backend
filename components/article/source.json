@@ -1,25 +1,25 @@
 {
   "collectionName": "components_article_sources",
   "info": {
-    "name": "resource",
+    "name": "reference",
     "icon": "link",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "title": {
+    "reference_title": {
       "type": "string",
       "required": true
     },
-    "url": {
+    "reference_url": {
       "type": "string",
       "required": true
     },
-    "description": {
+    "reference_description": {
       "type": "richtext",
       "required": true
     },
-    "source_name": {
+    "reference_button_text": {
       "type": "string",
       "required": true
     }

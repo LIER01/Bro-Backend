@@ -15,7 +15,7 @@
       "type": "richtext",
       "required": true
     },
-    "image": {
+    "media": {
       "model": "file",
       "via": "related",
       "allowedTypes": [

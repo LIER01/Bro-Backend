@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "course_groups",
   "info": {
-    "name": "Category",
-    "description": ""
+    "name": "Course Group"
   },
   "options": {
     "increments": true,
@@ -11,18 +10,14 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "category_name": {
+    "name": {
       "type": "string",
       "required": true,
       "unique": true
     },
-    "cover_photo": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
       "required": true
     }
   }
