@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "languages",
+  "collectionName": "resource_groups",
   "info": {
-    "name": "Language",
-    "description": ""
+    "name": "Resource Group"
   },
   "options": {
     "increments": true,
@@ -11,14 +10,13 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "language_full_name": {
+    "name": {
       "type": "string",
       "required": true
     },
     "slug": {
       "type": "uid",
-      "maxLength": 2,
-      "minLength": 2,
+      "targetField": "name",
       "required": true
     }
   }

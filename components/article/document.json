@@ -2,15 +2,16 @@
   "collectionName": "components_article_documents",
   "info": {
     "name": "document",
-    "icon": "file-pdf"
+    "icon": "file-pdf",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "name": {
+    "document_name": {
       "type": "string",
       "required": true
     },
-    "document": {
+    "document_file": {
       "model": "file",
       "via": "related",
       "allowedTypes": [

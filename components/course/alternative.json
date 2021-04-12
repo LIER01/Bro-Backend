@@ -7,7 +7,7 @@
   },
   "options": {},
   "attributes": {
-    "name": {
+    "alternative_text": {
       "type": "string",
       "required": true
     },
@@ -20,7 +20,7 @@
       "plugin": "upload",
       "required": false
     },
-    "correct": {
+    "is_correct": {
       "type": "boolean",
       "required": true,
       "default": false

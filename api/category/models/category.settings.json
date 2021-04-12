@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "categories",
   "info": {
-    "name": "Category"
+    "name": "Category",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -10,9 +11,10 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "name": {
+    "category_name": {
       "type": "string",
-      "required": true
+      "required": true,
+      "unique": true
     },
     "cover_photo": {
       "model": "file",
@@ -21,6 +23,10 @@
         "images"
       ],
       "plugin": "upload",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
       "required": true
     }
   }
