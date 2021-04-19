@@ -14,7 +14,8 @@
     "category_name": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": true,
+      "maxLength": 14
     },
     "cover_photo": {
       "model": "file",
@@ -27,7 +28,8 @@
     },
     "description": {
       "type": "richtext",
-      "required": true
+      "required": true,
+      "maxLength": 130
     }
   }
 }

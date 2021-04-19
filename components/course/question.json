@@ -1,26 +1,28 @@
 {
   "collectionName": "components_course_questions",
   "info": {
-  "name": "Question",
-  "icon": "gamepad",
-  "description": ""
+    "name": "Question",
+    "icon": "gamepad",
+    "description": ""
   },
   "options": {},
   "attributes": {
-  "question": {
-  "type": "string",
-  "required": true
-  },
-  "alternatives": {
-  "type": "component",
-  "repeatable": true,
-  "component": "course.alternative",
-  "required": true,
-  "min": 2
-  },
-  "clarification": {
-  "type": "richtext",
-  "required": true
+    "question": {
+      "type": "string",
+      "required": true,
+      "maxLength": 80
+    },
+    "alternatives": {
+      "type": "component",
+      "repeatable": true,
+      "component": "course.alternative",
+      "required": true,
+      "min": 2
+    },
+    "clarification": {
+      "type": "richtext",
+      "required": true,
+      "maxLength": 150
+    }
   }
-  }
-  }
+}
