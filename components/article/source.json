@@ -19,7 +19,7 @@
     "reference_description": {
       "type": "richtext",
       "required": true,
-      "maxLength": 60
+      "minLength": 40
     },
     "reference_button_text": {
       "type": "string",

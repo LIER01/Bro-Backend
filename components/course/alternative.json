@@ -10,7 +10,7 @@
     "alternative_text": {
       "type": "string",
       "required": true,
-      "maxLength": 30
+      "maxLength": 70
     },
     "image": {
       "model": "file",
@@ -19,7 +19,8 @@
         "images"
       ],
       "plugin": "upload",
-      "required": false
+      "required": false,
+      "pluginOptions": {}
     },
     "is_correct": {
       "type": "boolean",

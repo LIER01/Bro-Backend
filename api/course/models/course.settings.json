@@ -28,12 +28,12 @@
     "title": {
       "type": "string",
       "required": true,
-      "maxLength": 24
+      "maxLength": 30
     },
     "description": {
       "type": "string",
       "required": true,
-      "maxLength": 45
+      "maxLength": 50
     },
     "language": {
       "model": "language"
